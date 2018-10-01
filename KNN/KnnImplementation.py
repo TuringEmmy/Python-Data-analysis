@@ -67,6 +67,7 @@ def getNeighbors(trainingSet, testInstance, k):
         neighbors.append(distances[x][0])
     return neighbors
 
+
 # 根据邻居，利用少数服从多数的原则
 def getResponse(neighbors):
     classVotes = {}
@@ -78,7 +79,7 @@ def getResponse(neighbors):
             classVotes[response] = 1
     # 将每一类投票进行排序
     sortedVotes = sorted(classVotes.items(), key=operator.itemgetter(1), reverse=True)
-    return sortedVotes[0][0]   # 因为拍过需，第一个返回即可，最大值
+    return sortedVotes[0][0]  # 因为拍过需，第一个返回即可，最大值
 
 
 # 测算实际值与测算值之间的差距，求准确率
