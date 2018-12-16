@@ -2,7 +2,7 @@ from numpy import genfromtxt
 import numpy as np
 from sklearn import datasets, linear_model
 
-dataPath = r".\DeliveryDummyDone.csv"
+dataPath = r"./DeliveryDummyDone.csv"
 # dataPath = r".\Delivery.csv"
 # 提取数据，然后按逗号分隔
 deliveryData = genfromtxt(dataPath, delimiter=',')

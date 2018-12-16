@@ -4,7 +4,8 @@ from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.preprocessing import LabelBinarizer
 from NeuralNetwork import NeuralNetwork
 # 分成k份，进行交叉验算，k-1份作为训练集，剩余一份当做测试集
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
+# from sklearn.cross_validation import train_test_split
 
 # 装载数据
 digits = load_digits()
